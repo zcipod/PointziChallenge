@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class BooklistConfig(AppConfig):
-    name = 'bookList'
+    name = 'PointziChallenge.bookList'

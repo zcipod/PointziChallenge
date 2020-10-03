@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from bookList.models import Books, User
+from PointziChallenge.bookList.models import Books, User
 
 
 class BooksSerializer(serializers.HyperlinkedModelSerializer):

@@ -18,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bookList.apps.BooklistConfig',
+    'PointziChallenge.bookList.apps.BooklistConfig',
     'rest_framework',
     'behave_django',
 ]
