@@ -76,6 +76,47 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{asctime} {module}.{funcName} {lineno:3} {levelname:7} => {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'verbose',
+            'filename': 'log/django.log',
+            'maxBytes': 4194304,  # 4 MB
+            'backupCount': 10,
+            'level': 'DEBUG',
+        },
+    },
+    'loggers': {
+        '': {
+            'handlers': ['console', 'file'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        },
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': False,
+        },
+    },
+}
+
+
+
+
+
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Australia/Sydney'
