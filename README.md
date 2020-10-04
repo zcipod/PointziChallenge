@@ -54,3 +54,4 @@ To deploy by the following steps:
 2. switch to the root dir of this project.
 3. execute ```docker-compose up``` to start deployment.
 4. once you changed the code, execute ```docker-compose up --build``` to rebuild the image.
+
