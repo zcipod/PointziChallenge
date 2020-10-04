@@ -93,7 +93,7 @@ LOGGING = {
         'file': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'verbose',
-            'filename': 'log/django.log',
+            'filename': 'PointziChallenge/log/django.log',
             'maxBytes': 4194304,  # 4 MB
             'backupCount': 10,
             'level': 'DEBUG',

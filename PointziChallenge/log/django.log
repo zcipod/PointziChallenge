@@ -46,3 +46,6 @@
 2020-10-04 20:49:53,981 basehttp.log_message 157 WARNING => "GET /apple-touch-icon.png HTTP/1.1" 404 3979
 2020-10-04 20:49:55,133 basehttp.log_message 157 INFO    => "GET /user/ HTTP/1.1" 200 31424
 2020-10-04 20:50:00,845 basehttp.log_message 157 INFO    => "GET /books/ HTTP/1.1" 200 16290
+2020-10-04 20:52:12,558 autoreload.run_with_reloader 613 INFO    => Watching for file changes with StatReloader
+2020-10-04 20:52:16,179 basehttp.log_message 157 INFO    => "GET /books/ HTTP/1.1" 200 16290
+2020-10-04 20:52:18,238 basehttp.log_message 157 INFO    => "OPTIONS /books/ HTTP/1.1" 200 16441
