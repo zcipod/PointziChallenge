@@ -72,7 +72,6 @@ class BooksViewSet(viewsets.ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         request.POST._mutable = True
-
         hostName = request.get_host()
         if isinstance(request.data['reader'], list):
             request.data['reader'] = ["".join(["http://", hostName, '/user/', item, '/'])

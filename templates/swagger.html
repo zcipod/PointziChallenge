@@ -790,10 +790,9 @@ margin-bottom: 20px;
         <div id="header">
           <div id="api-_">
             <h2 id="welcome-to-apidoc">API and SDK Documentation</h2>
-              <div class="app-desc">Version: 1.0</div>
+              <div class="app-desc">Version: 1.1</div>
             <hr>
-            <div><p>This is a solution of a simple Django Rest Framework API application.</p><p>This application is a recorder for users to save books they read.</p>
-</div>
+            <div>This is a solution of a simple Django Rest Framework API application. This application is a recorder for users to save books they read.</div>
           </div>
         </div>
         <div id="sections">
@@ -808,7 +807,7 @@ margin-bottom: 20px;
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;list all the books in database.&lt;/p&gt;&lt;p&gt;or list books read by particular user.&lt;/p&gt;&lt;p&gt;or list books read by particular user in the last period of days.&lt;/p&gt;</p>
+                        <p class="marked">list all the books in database.&lt;/p&gt;&lt;p&gt;or list books read by particular user. or list books read by particular user in the last period of days.</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/books/</span></code></pre>
@@ -831,7 +830,7 @@ margin-bottom: 20px;
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Books-booksGet-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://localhost/books/?firstName=&period="</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://52.65.111.160:8000/books/?firstName=&period="</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Books-booksGet-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -845,7 +844,7 @@ import java.util.*;
 public class BooksApiExample {
 
     public static void main(String[] args) {
-        
+
         BooksApi apiInstance = new BooksApi();
         String firstName = firstName_example; // String | query by particular user
         String period = period_example; // String | filter by days
@@ -908,7 +907,7 @@ BooksApi *apiInstance = [[BooksApi alloc] init];
 
 var api = new PointziFullStackDeveloperProgrammingChallenge.BooksApi()
 
-var opts = { 
+var opts = {
   'firstName': firstName_example, // {String} query by particular user
   'period': period_example // {String} filter by days
 };
@@ -940,10 +939,10 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new BooksApi();
-            var firstName = firstName_example;  // String | query by particular user (optional) 
-            var period = period_example;  // String | filter by days (optional) 
+            var firstName = firstName_example;  // String | query by particular user (optional)
+            var period = period_example;  // String | filter by days (optional)
 
             try
             {
@@ -987,7 +986,7 @@ my $api_instance = WWW::SwaggerClient::BooksApi->new();
 my $firstName = firstName_example; # String | query by particular user
 my $period = period_example; # String | filter by days
 
-eval { 
+eval {
     my $result = $api_instance->booksGet(firstName => $firstName, period => $period);
     print Dumper($result);
 };
@@ -1008,7 +1007,7 @@ api_instance = swagger_client.BooksApi()
 firstName = firstName_example # String | query by particular user (optional)
 period = period_example # String | filter by days (optional)
 
-try: 
+try:
     # list books
     api_response = api_instance.books_get(firstName=firstName, period=period)
     pprint(api_response)
@@ -1150,7 +1149,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Books-booksISBNDelete-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "http://localhost/books/{ISBN}/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "http://52.65.111.160:8000/books/{ISBN}/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Books-booksISBNDelete-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -1164,9 +1163,9 @@ import java.util.*;
 public class BooksApiExample {
 
     public static void main(String[] args) {
-        
+
         BooksApi apiInstance = new BooksApi();
-        String iSBN = iSBN_example; // String | 
+        String iSBN = iSBN_example; // String |
         try {
             apiInstance.booksISBNDelete(iSBN);
         } catch (ApiException e) {
@@ -1184,7 +1183,7 @@ public class BooksApiExample {
 
     public static void main(String[] args) {
         BooksApi apiInstance = new BooksApi();
-        String iSBN = iSBN_example; // String | 
+        String iSBN = iSBN_example; // String |
         try {
             apiInstance.booksISBNDelete(iSBN);
         } catch (ApiException e) {
@@ -1199,7 +1198,7 @@ public class BooksApiExample {
   <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
   </div> -->
                             <div class="tab-pane" id="examples-Books-booksISBNDelete-0-objc">
-                              <pre class="prettyprint"><code class="language-cpp">String *iSBN = iSBN_example; // 
+                              <pre class="prettyprint"><code class="language-cpp">String *iSBN = iSBN_example; //
 
 BooksApi *apiInstance = [[BooksApi alloc] init];
 
@@ -1218,7 +1217,7 @@ BooksApi *apiInstance = [[BooksApi alloc] init];
 
 var api = new PointziFullStackDeveloperProgrammingChallenge.BooksApi()
 
-var iSBN = iSBN_example; // {String} 
+var iSBN = iSBN_example; // {String}
 
 
 var callback = function(error, data, response) {
@@ -1248,9 +1247,9 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new BooksApi();
-            var iSBN = iSBN_example;  // String | 
+            var iSBN = iSBN_example;  // String |
 
             try
             {
@@ -1272,7 +1271,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\BooksApi();
-$iSBN = iSBN_example; // String | 
+$iSBN = iSBN_example; // String |
 
 try {
     $api_instance->booksISBNDelete($iSBN);
@@ -1288,9 +1287,9 @@ use WWW::SwaggerClient::Configuration;
 use WWW::SwaggerClient::BooksApi;
 
 my $api_instance = WWW::SwaggerClient::BooksApi->new();
-my $iSBN = iSBN_example; # String | 
+my $iSBN = iSBN_example; # String |
 
-eval { 
+eval {
     $api_instance->booksISBNDelete(iSBN => $iSBN);
 };
 if ($@) {
@@ -1307,9 +1306,9 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.BooksApi()
-iSBN = iSBN_example # String | 
+iSBN = iSBN_example # String |
 
-try: 
+try:
     # remove a book
     api_instance.books_isbn_delete(iSBN)
 except ApiException as e:
@@ -1340,7 +1339,7 @@ except ApiException as e:
                     </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
                 <div class="inner required">
@@ -1401,7 +1400,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Books-booksISBNGet-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://localhost/books/{ISBN}/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://52.65.111.160:8000/books/{ISBN}/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Books-booksISBNGet-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -1415,9 +1414,9 @@ import java.util.*;
 public class BooksApiExample {
 
     public static void main(String[] args) {
-        
+
         BooksApi apiInstance = new BooksApi();
-        String iSBN = iSBN_example; // String | 
+        String iSBN = iSBN_example; // String |
         try {
             booksResponse result = apiInstance.booksISBNGet(iSBN);
             System.out.println(result);
@@ -1436,7 +1435,7 @@ public class BooksApiExample {
 
     public static void main(String[] args) {
         BooksApi apiInstance = new BooksApi();
-        String iSBN = iSBN_example; // String | 
+        String iSBN = iSBN_example; // String |
         try {
             booksResponse result = apiInstance.booksISBNGet(iSBN);
             System.out.println(result);
@@ -1452,7 +1451,7 @@ public class BooksApiExample {
   <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
   </div> -->
                             <div class="tab-pane" id="examples-Books-booksISBNGet-0-objc">
-                              <pre class="prettyprint"><code class="language-cpp">String *iSBN = iSBN_example; // 
+                              <pre class="prettyprint"><code class="language-cpp">String *iSBN = iSBN_example; //
 
 BooksApi *apiInstance = [[BooksApi alloc] init];
 
@@ -1474,7 +1473,7 @@ BooksApi *apiInstance = [[BooksApi alloc] init];
 
 var api = new PointziFullStackDeveloperProgrammingChallenge.BooksApi()
 
-var iSBN = iSBN_example; // {String} 
+var iSBN = iSBN_example; // {String}
 
 
 var callback = function(error, data, response) {
@@ -1504,9 +1503,9 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new BooksApi();
-            var iSBN = iSBN_example;  // String | 
+            var iSBN = iSBN_example;  // String |
 
             try
             {
@@ -1529,7 +1528,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\BooksApi();
-$iSBN = iSBN_example; // String | 
+$iSBN = iSBN_example; // String |
 
 try {
     $result = $api_instance->booksISBNGet($iSBN);
@@ -1546,9 +1545,9 @@ use WWW::SwaggerClient::Configuration;
 use WWW::SwaggerClient::BooksApi;
 
 my $api_instance = WWW::SwaggerClient::BooksApi->new();
-my $iSBN = iSBN_example; # String | 
+my $iSBN = iSBN_example; # String |
 
-eval { 
+eval {
     my $result = $api_instance->booksISBNGet(iSBN => $iSBN);
     print Dumper($result);
 };
@@ -1566,9 +1565,9 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.BooksApi()
-iSBN = iSBN_example # String | 
+iSBN = iSBN_example # String |
 
-try: 
+try:
     # retrieve a book
     api_response = api_instance.books_isbn_get(iSBN)
     pprint(api_response)
@@ -1600,7 +1599,7 @@ except ApiException as e:
                     </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
                 <div class="inner required">
@@ -1673,7 +1672,7 @@ except ApiException as e:
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;update a new book with the information of book title, author, ISBN and dateAdded.&lt;/p&gt;</p>
+                        <p class="marked">update a new book with the information of book title, author, ISBN and dateAdded.</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/books/{ISBN}/</span></code></pre>
@@ -1696,7 +1695,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Books-booksISBNPut-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "http://localhost/books/{ISBN}/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "http://52.65.111.160:8000/books/{ISBN}/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Books-booksISBNPut-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -1710,13 +1709,13 @@ import java.util.*;
 public class BooksApiExample {
 
     public static void main(String[] args) {
-        
+
         BooksApi apiInstance = new BooksApi();
         String iSBN = iSBN_example; // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-        String iSBN2 = iSBN_example; // String | 
-        String title = title_example; // String | 
-        String author = author_example; // String | 
-        String dateAdded = dateAdded_example; // String | 
+        String iSBN2 = iSBN_example; // String |
+        String title = title_example; // String |
+        String author = author_example; // String |
+        String dateAdded = dateAdded_example; // String |
         try {
             booksResponse result = apiInstance.booksISBNPut(iSBN, iSBN2, title, author, dateAdded);
             System.out.println(result);
@@ -1736,10 +1735,10 @@ public class BooksApiExample {
     public static void main(String[] args) {
         BooksApi apiInstance = new BooksApi();
         String iSBN = iSBN_example; // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-        String iSBN2 = iSBN_example; // String | 
-        String title = title_example; // String | 
-        String author = author_example; // String | 
-        String dateAdded = dateAdded_example; // String | 
+        String iSBN2 = iSBN_example; // String |
+        String title = title_example; // String |
+        String author = author_example; // String |
+        String dateAdded = dateAdded_example; // String |
         try {
             booksResponse result = apiInstance.booksISBNPut(iSBN, iSBN2, title, author, dateAdded);
             System.out.println(result);
@@ -1756,7 +1755,7 @@ public class BooksApiExample {
   </div> -->
                             <div class="tab-pane" id="examples-Books-booksISBNPut-0-objc">
                               <pre class="prettyprint"><code class="language-cpp">String *iSBN = iSBN_example; // the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API. (default to )
-String *iSBN2 = iSBN_example; // 
+String *iSBN2 = iSBN_example; //
 String *title = title_example; //  (optional)
 String *author = author_example; //  (optional)
 String *dateAdded = dateAdded_example; //  (optional)
@@ -1787,12 +1786,12 @@ var api = new PointziFullStackDeveloperProgrammingChallenge.BooksApi()
 
 var iSBN = iSBN_example; // {String} the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
 
-var iSBN2 = iSBN_example; // {String} 
+var iSBN2 = iSBN_example; // {String}
 
-var opts = { 
-  'title': title_example, // {String} 
-  'author': author_example, // {String} 
-  'dateAdded': dateAdded_example // {String} 
+var opts = {
+  'title': title_example, // {String}
+  'author': author_example, // {String}
+  'dateAdded': dateAdded_example // {String}
 };
 
 var callback = function(error, data, response) {
@@ -1822,13 +1821,13 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new BooksApi();
             var iSBN = iSBN_example;  // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API. (default to )
-            var iSBN2 = iSBN_example;  // String | 
-            var title = title_example;  // String |  (optional) 
-            var author = author_example;  // String |  (optional) 
-            var dateAdded = dateAdded_example;  // String |  (optional) 
+            var iSBN2 = iSBN_example;  // String |
+            var title = title_example;  // String |  (optional)
+            var author = author_example;  // String |  (optional)
+            var dateAdded = dateAdded_example;  // String |  (optional)
 
             try
             {
@@ -1852,10 +1851,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\BooksApi();
 $iSBN = iSBN_example; // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-$iSBN2 = iSBN_example; // String | 
-$title = title_example; // String | 
-$author = author_example; // String | 
-$dateAdded = dateAdded_example; // String | 
+$iSBN2 = iSBN_example; // String |
+$title = title_example; // String |
+$author = author_example; // String |
+$dateAdded = dateAdded_example; // String |
 
 try {
     $result = $api_instance->booksISBNPut($iSBN, $iSBN2, $title, $author, $dateAdded);
@@ -1873,12 +1872,12 @@ use WWW::SwaggerClient::BooksApi;
 
 my $api_instance = WWW::SwaggerClient::BooksApi->new();
 my $iSBN = iSBN_example; # String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-my $iSBN2 = iSBN_example; # String | 
-my $title = title_example; # String | 
-my $author = author_example; # String | 
-my $dateAdded = dateAdded_example; # String | 
+my $iSBN2 = iSBN_example; # String |
+my $title = title_example; # String |
+my $author = author_example; # String |
+my $dateAdded = dateAdded_example; # String |
 
-eval { 
+eval {
     my $result = $api_instance->booksISBNPut(iSBN => $iSBN, iSBN2 => $iSBN2, title => $title, author => $author, dateAdded => $dateAdded);
     print Dumper($result);
 };
@@ -1897,12 +1896,12 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = swagger_client.BooksApi()
 iSBN = iSBN_example # String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API. (default to )
-iSBN2 = iSBN_example # String | 
+iSBN2 = iSBN_example # String |
 title = title_example # String |  (optional)
 author = author_example # String |  (optional)
 dateAdded = dateAdded_example # String |  (optional)
 
-try: 
+try:
     # update a book
     api_response = api_instance.books_isbn_put(iSBN, iSBN2, title=title, author=author, dateAdded=dateAdded)
     pprint(api_response)
@@ -1934,7 +1933,7 @@ except ApiException as e:
                     </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
                 <div class="inner required">
@@ -1990,7 +1989,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -2010,7 +2009,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -2030,7 +2029,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -2097,7 +2096,7 @@ except ApiException as e:
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;create a new book with the information of book title, author, ISBN and dateAdded.&lt;/p&gt;</p>
+                        <p class="marked">create a new book with the information of book title, author, ISBN and dateAdded.</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/books/</span></code></pre>
@@ -2120,7 +2119,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Books-createBook-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "http://localhost/books/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "http://52.65.111.160:8000/books/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Books-createBook-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2134,12 +2133,12 @@ import java.util.*;
 public class BooksApiExample {
 
     public static void main(String[] args) {
-        
+
         BooksApi apiInstance = new BooksApi();
         String iSBN = iSBN_example; // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-        String title = title_example; // String | 
-        String author = author_example; // String | 
-        String dateAdded = dateAdded_example; // String | 
+        String title = title_example; // String |
+        String author = author_example; // String |
+        String dateAdded = dateAdded_example; // String |
         try {
             booksResponse result = apiInstance.createBook(iSBN, title, author, dateAdded);
             System.out.println(result);
@@ -2159,9 +2158,9 @@ public class BooksApiExample {
     public static void main(String[] args) {
         BooksApi apiInstance = new BooksApi();
         String iSBN = iSBN_example; // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-        String title = title_example; // String | 
-        String author = author_example; // String | 
-        String dateAdded = dateAdded_example; // String | 
+        String title = title_example; // String |
+        String author = author_example; // String |
+        String dateAdded = dateAdded_example; // String |
         try {
             booksResponse result = apiInstance.createBook(iSBN, title, author, dateAdded);
             System.out.println(result);
@@ -2207,10 +2206,10 @@ var api = new PointziFullStackDeveloperProgrammingChallenge.BooksApi()
 
 var iSBN = iSBN_example; // {String} the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
 
-var opts = { 
-  'title': title_example, // {String} 
-  'author': author_example, // {String} 
-  'dateAdded': dateAdded_example // {String} 
+var opts = {
+  'title': title_example, // {String}
+  'author': author_example, // {String}
+  'dateAdded': dateAdded_example // {String}
 };
 
 var callback = function(error, data, response) {
@@ -2240,12 +2239,12 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new BooksApi();
             var iSBN = iSBN_example;  // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-            var title = title_example;  // String |  (optional) 
-            var author = author_example;  // String |  (optional) 
-            var dateAdded = dateAdded_example;  // String |  (optional) 
+            var title = title_example;  // String |  (optional)
+            var author = author_example;  // String |  (optional)
+            var dateAdded = dateAdded_example;  // String |  (optional)
 
             try
             {
@@ -2269,9 +2268,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\BooksApi();
 $iSBN = iSBN_example; // String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-$title = title_example; // String | 
-$author = author_example; // String | 
-$dateAdded = dateAdded_example; // String | 
+$title = title_example; // String |
+$author = author_example; // String |
+$dateAdded = dateAdded_example; // String |
 
 try {
     $result = $api_instance->createBook($iSBN, $title, $author, $dateAdded);
@@ -2289,11 +2288,11 @@ use WWW::SwaggerClient::BooksApi;
 
 my $api_instance = WWW::SwaggerClient::BooksApi->new();
 my $iSBN = iSBN_example; # String | the ISBN must be a string with 10 or 13 numbers. it must can be retrieved from Google Book API.
-my $title = title_example; # String | 
-my $author = author_example; # String | 
-my $dateAdded = dateAdded_example; # String | 
+my $title = title_example; # String |
+my $author = author_example; # String |
+my $dateAdded = dateAdded_example; # String |
 
-eval { 
+eval {
     my $result = $api_instance->createBook(iSBN => $iSBN, title => $title, author => $author, dateAdded => $dateAdded);
     print Dumper($result);
 };
@@ -2316,7 +2315,7 @@ title = title_example # String |  (optional)
 author = author_example # String |  (optional)
 dateAdded = dateAdded_example # String |  (optional)
 
-try: 
+try:
     # create a book
     api_response = api_instance.create_book(iSBN, title=title, author=author, dateAdded=dateAdded)
     pprint(api_response)
@@ -2371,7 +2370,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -2391,7 +2390,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -2411,7 +2410,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -2481,7 +2480,7 @@ except ApiException as e:
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;using firstName to remove the user from database&lt;/p&gt;</p>
+                        <p class="marked">using firstName to remove the user from database</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/user/{firstName}/</span></code></pre>
@@ -2504,7 +2503,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-User-userFirstNameDelete-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "http://localhost/user/{firstName}/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "http://52.65.111.160:8000/user/{firstName}/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-User-userFirstNameDelete-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2518,7 +2517,7 @@ import java.util.*;
 public class UserApiExample {
 
     public static void main(String[] args) {
-        
+
         UserApi apiInstance = new UserApi();
         String firstName = firstName_example; // String | the firstName of the user
         try {
@@ -2602,7 +2601,7 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new UserApi();
             var firstName = firstName_example;  // String | the firstName of the user
 
@@ -2644,7 +2643,7 @@ use WWW::SwaggerClient::UserApi;
 my $api_instance = WWW::SwaggerClient::UserApi->new();
 my $firstName = firstName_example; # String | the firstName of the user
 
-eval { 
+eval {
     $api_instance->userFirstNameDelete(firstName => $firstName);
 };
 if ($@) {
@@ -2663,7 +2662,7 @@ from pprint import pprint
 api_instance = swagger_client.UserApi()
 firstName = firstName_example # String | the firstName of the user
 
-try: 
+try:
     # remove
     api_instance.user_first_name_delete(firstName)
 except ApiException as e:
@@ -2727,12 +2726,12 @@ except ApiException as e:
                       <article id="api-User-userFirstNameGet-0" data-group="User" data-name="userFirstNameGet" data-version="0">
                         <div class="pull-left">
                           <h1>userFirstNameGet</h1>
-                          <p>retrieve</p>
+                          <p>retrieve particular user</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;using firstName to retrieve the user&amp;nbsp;&lt;/p&gt;</p>
+                        <p class="marked">using firstName to retrieve the user&amp;nbsp;</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/user/{firstName}/</span></code></pre>
@@ -2755,7 +2754,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-User-userFirstNameGet-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://localhost/user/{firstName}/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://52.65.111.160:8000/user/{firstName}/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-User-userFirstNameGet-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2769,7 +2768,7 @@ import java.util.*;
 public class UserApiExample {
 
     public static void main(String[] args) {
-        
+
         UserApi apiInstance = new UserApi();
         String firstName = firstName_example; // String | the firstName of the user
         try {
@@ -2810,7 +2809,7 @@ public class UserApiExample {
 
 UserApi *apiInstance = [[UserApi alloc] init];
 
-// retrieve
+// retrieve particular user
 [apiInstance userFirstNameGetWith:firstName
               completionHandler: ^(userResponse output, NSError* error) {
                             if (output) {
@@ -2858,13 +2857,13 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new UserApi();
             var firstName = firstName_example;  // String | the firstName of the user
 
             try
             {
-                // retrieve
+                // retrieve particular user
                 userResponse result = apiInstance.userFirstNameGet(firstName);
                 Debug.WriteLine(result);
             }
@@ -2902,7 +2901,7 @@ use WWW::SwaggerClient::UserApi;
 my $api_instance = WWW::SwaggerClient::UserApi->new();
 my $firstName = firstName_example; # String | the firstName of the user
 
-eval { 
+eval {
     my $result = $api_instance->userFirstNameGet(firstName => $firstName);
     print Dumper($result);
 };
@@ -2922,8 +2921,8 @@ from pprint import pprint
 api_instance = swagger_client.UserApi()
 firstName = firstName_example # String | the firstName of the user
 
-try: 
-    # retrieve
+try:
+    # retrieve particular user
     api_response = api_instance.user_first_name_get(firstName)
     pprint(api_response)
 except ApiException as e:
@@ -3027,7 +3026,7 @@ except ApiException as e:
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;update informations of a particular user&lt;/p&gt;</p>
+                        <p class="marked">update informations of a particular user</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/user/{firstName}/</span></code></pre>
@@ -3050,7 +3049,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-User-userFirstNamePut-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "http://localhost/user/{firstName}/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "http://52.65.111.160:8000/user/{firstName}/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-User-userFirstNamePut-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -3064,12 +3063,12 @@ import java.util.*;
 public class UserApiExample {
 
     public static void main(String[] args) {
-        
+
         UserApi apiInstance = new UserApi();
         String firstName = firstName_example; // String | the firstName of the user
-        String firstName2 = firstName_example; // String | 
-        String email = email_example; // String | 
-        String country = country_example; // String | 
+        String firstName2 = firstName_example; // String |
+        String email = email_example; // String |
+        String country = country_example; // String |
         try {
             userResponse result = apiInstance.userFirstNamePut(firstName, firstName2, email, country);
             System.out.println(result);
@@ -3089,9 +3088,9 @@ public class UserApiExample {
     public static void main(String[] args) {
         UserApi apiInstance = new UserApi();
         String firstName = firstName_example; // String | the firstName of the user
-        String firstName2 = firstName_example; // String | 
-        String email = email_example; // String | 
-        String country = country_example; // String | 
+        String firstName2 = firstName_example; // String |
+        String email = email_example; // String |
+        String country = country_example; // String |
         try {
             userResponse result = apiInstance.userFirstNamePut(firstName, firstName2, email, country);
             System.out.println(result);
@@ -3108,7 +3107,7 @@ public class UserApiExample {
   </div> -->
                             <div class="tab-pane" id="examples-User-userFirstNamePut-0-objc">
                               <pre class="prettyprint"><code class="language-cpp">String *firstName = firstName_example; // the firstName of the user
-String *firstName2 = firstName_example; // 
+String *firstName2 = firstName_example; //
 String *email = email_example; //  (optional)
 String *country = country_example; //  (optional)
 
@@ -3137,11 +3136,11 @@ var api = new PointziFullStackDeveloperProgrammingChallenge.UserApi()
 
 var firstName = firstName_example; // {String} the firstName of the user
 
-var firstName2 = firstName_example; // {String} 
+var firstName2 = firstName_example; // {String}
 
-var opts = { 
-  'email': email_example, // {String} 
-  'country': country_example // {String} 
+var opts = {
+  'email': email_example, // {String}
+  'country': country_example // {String}
 };
 
 var callback = function(error, data, response) {
@@ -3171,12 +3170,12 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new UserApi();
             var firstName = firstName_example;  // String | the firstName of the user
-            var firstName2 = firstName_example;  // String | 
-            var email = email_example;  // String |  (optional) 
-            var country = country_example;  // String |  (optional) 
+            var firstName2 = firstName_example;  // String |
+            var email = email_example;  // String |  (optional)
+            var country = country_example;  // String |  (optional)
 
             try
             {
@@ -3200,9 +3199,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\UserApi();
 $firstName = firstName_example; // String | the firstName of the user
-$firstName2 = firstName_example; // String | 
-$email = email_example; // String | 
-$country = country_example; // String | 
+$firstName2 = firstName_example; // String |
+$email = email_example; // String |
+$country = country_example; // String |
 
 try {
     $result = $api_instance->userFirstNamePut($firstName, $firstName2, $email, $country);
@@ -3220,11 +3219,11 @@ use WWW::SwaggerClient::UserApi;
 
 my $api_instance = WWW::SwaggerClient::UserApi->new();
 my $firstName = firstName_example; # String | the firstName of the user
-my $firstName2 = firstName_example; # String | 
-my $email = email_example; # String | 
-my $country = country_example; # String | 
+my $firstName2 = firstName_example; # String |
+my $email = email_example; # String |
+my $country = country_example; # String |
 
-eval { 
+eval {
     my $result = $api_instance->userFirstNamePut(firstName => $firstName, firstName2 => $firstName2, email => $email, country => $country);
     print Dumper($result);
 };
@@ -3243,11 +3242,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
 firstName = firstName_example # String | the firstName of the user
-firstName2 = firstName_example # String | 
+firstName2 = firstName_example # String |
 email = email_example # String |  (optional)
 country = country_example # String |  (optional)
 
-try: 
+try:
     # update
     api_response = api_instance.user_first_name_put(firstName, firstName2, email=email, country=country)
     pprint(api_response)
@@ -3312,7 +3311,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
                 <div class="inner required">
@@ -3335,7 +3334,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -3355,7 +3354,7 @@ except ApiException as e:
                 </span>
 
                     <div class="inner description">
-                        
+
                     </div>
             </div>
         </div>
@@ -3445,7 +3444,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-User-userGet-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://localhost/user/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "http://52.65.111.160:8000/user/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-User-userGet-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -3459,7 +3458,7 @@ import java.util.*;
 public class UserApiExample {
 
     public static void main(String[] args) {
-        
+
         UserApi apiInstance = new UserApi();
         try {
             userResponse result = apiInstance.userGet();
@@ -3498,7 +3497,7 @@ public class UserApiExample {
 UserApi *apiInstance = [[UserApi alloc] init];
 
 // list users
-[apiInstance userGetWithCompletionHandler: 
+[apiInstance userGetWithCompletionHandler:
               ^(userResponse output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
@@ -3542,7 +3541,7 @@ namespace Example
     {
         public void main()
         {
-            
+
             var apiInstance = new UserApi();
 
             try
@@ -3583,7 +3582,7 @@ use WWW::SwaggerClient::UserApi;
 
 my $api_instance = WWW::SwaggerClient::UserApi->new();
 
-eval { 
+eval {
     my $result = $api_instance->userGet();
     print Dumper($result);
 };
@@ -3602,7 +3601,7 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
 
-try: 
+try:
     # list users
     api_response = api_instance.user_get()
     pprint(api_response)
@@ -3674,7 +3673,7 @@ except ApiException as e:
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">&lt;p&gt;create a new user with the information of first name, email and country.&lt;/p&gt;</p>
+                        <p class="marked">create a new user with the information of first name, email and country.</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/user/</span></code></pre>
@@ -3697,7 +3696,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-User-userPost-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "http://localhost/user/"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "http://52.65.111.160:8000/user/"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-User-userPost-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
