@@ -10,7 +10,7 @@ the project was [deployed on AWS](http://52.65.111.160:8000).
 
 ### API
 
-[Swagger](http://52.65.111.160:8000/swagger) 
+[Swagger](https://app.swaggerhub.com/apis-docs/zcipod/pointzi-full_stack_developer_programming_challenge/1.1) 
 
 path: "/swagger"  ->   Swagger documentation
 
