@@ -40,13 +40,37 @@ path: "/books/{ISBN}/"
 | put    | update the book with the ISBN of "ISBN"                      |
 | delete | delete the book with the ISBN of "ISBN"                      |
 
+#### Fields validation
+
+##### ISBN
+
+Once create a book record, the ISBN will be validated by Google Book API.
+
+Both 10 digits style and 13 digits style are acceptable.
+
+The API is https://www.googleapis.com/books/v1/volumes?q=isbn:**ISBN**
+
+##### firstName
+
+Only numbers, letters or "_" can be used in firstName of users. The length is between [4, 16]
+
 ### Documentation
 
  -> [Swagger](https://app.swaggerhub.com/apis-docs/zcipod/pointzi-full_stack_developer_programming_challenge/1.1) 
 
+### Unit Test
+
+run unit test:
+
+```python manage.py test```
+
 ### BDD Test
 
 Implement Behaviour Driven Development test using [behave](https://github.com/behave/behave) and [behave-django](https://github.com/behave/behave-django)
+
+run BDD Test:
+
+```python manage.py behave```
 
 The [content of the test](./features/operations.feature) is:
 
