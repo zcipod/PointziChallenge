@@ -4,9 +4,13 @@ This is a solution of a simple Django Rest Framework API program.
 
 This application is a recorder for users to save books they read.
 
+### Deployed practice
+
+the project was [deployed on AWS](http://52.65.111.160:8000).
+
 ### API
 
-[Swagger](./templates/swagger.html) 
+[Swagger](http://52.65.111.160:8000/swagger) 
 
 path: "/swagger"  ->   Swagger documentation
 
