@@ -115,12 +115,12 @@ Feature: general operations to use this back-end
 
 ### Deployment
 
-This project is can be deploied by docker.
+This project can be deployed by docker.
 
-To deploy by the following steps:
+Steps:
 
-1. make sure you have correctly installed docker server and docker-compose.
-2. switch to the root dir of this project.
-3. execute ```docker-compose up``` to start deployment.
-4. once you changed the code, execute ```docker-compose up --build``` to rebuild the image and deploy.
+1. Make sure you have correctly installed docker server and docker-compose.
+2. Switch to the root dir of this project.
+3. Execute ```docker-compose up``` in terminal to start deployment.
+4. Once you changed the code, execute ```docker-compose up --build``` to rebuild the image and redeploy.
 
