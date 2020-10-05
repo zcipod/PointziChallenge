@@ -1,14 +1,14 @@
 import os
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+# needs to move to env variable or other safe place
 SECRET_KEY = '15o5qa1f!yp6l^e@hy25*63w##-5r&ba@5&=sjsnfe3f_r-)-r'
 
 DEBUG = True
 
+# needs to restrict it to the domain and IP of the server
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
@@ -111,11 +111,6 @@ LOGGING = {
         },
     },
 }
-
-
-
-
-
 
 LANGUAGE_CODE = 'en-us'
 

@@ -6,7 +6,7 @@ This application is a recorder for users to save books they read.
 
 ### Deployed practice
 
-the project was [deployed on AWS](http://52.65.111.160:8000).
+The project was [deployed on AWS](http://52.65.111.160:8000).
 
 ### API
 
@@ -44,7 +44,7 @@ path: "/books/{ISBN}/"
 
 ##### ISBN
 
-Once create a book record, the ISBN will be validated by Google Book API.
+Once create of a book record, the ISBN will be validated by Google Book API.
 
 Both 10 digits style and 13 digits style are acceptable.
 
@@ -60,7 +60,7 @@ Only numbers, letters or "_" can be used in firstName of users. The length is be
 
 ### Unit Test
 
-run unit test:
+Run unit test:
 
 ```python manage.py test```
 
@@ -68,7 +68,7 @@ run unit test:
 
 Implement Behaviour Driven Development test using [behave](https://github.com/behave/behave) and [behave-django](https://github.com/behave/behave-django)
 
-run BDD Test:
+Run BDD Test:
 
 ```python manage.py behave```
 

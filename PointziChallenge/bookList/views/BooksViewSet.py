@@ -4,19 +4,9 @@ from rest_framework import viewsets
 from PointziChallenge.bookList.models import Books, User
 from rest_framework import status
 from rest_framework.response import Response
-from django.shortcuts import render
 import datetime
 import json
 from PointziChallenge.bookList.utils.web_page import Web_Page
-
-
-def swagger(request):
-    return render(request, 'swagger.html')
-
-
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
 
 
 def listWithFirstName(firstName):
